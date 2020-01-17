@@ -2,10 +2,10 @@ import React, { Component } from "react"
 import "./login.css"
 import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
-
+import data from "../config"
 firebase.initializeApp({
-  apiKey: "",
-  authDomain:""
+  apiKey: data.apiKey,
+  authDomain:data.authDomain
 })
 
 class login extends Component {
